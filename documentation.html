@@ -1,0 +1,187 @@
+Bloom & Petals - Flower Shop HTML Template Documentation
+Version: 1.0.0
+Release Date: January 04, 2026
+Author: [Your Name/Username]
+Compatible Browsers: Chrome, Firefox, Safari, Edge, Opera (latest versions)
+Framework: HTML5, CSS3
+License: Envato Elements (ThemeForest) - Standard License
+
+Table of Contents
+
+Introduction
+Features
+Files Included
+Installation
+Template Structure
+Customization
+Sections Overview
+Assets and Credits
+Changelog
+Support
+
+
+Introduction
+Welcome to Bloom & Petals, a modern, responsive HTML template designed specifically for flower shops, florists, and event decoration businesses. This template features a clean, elegant design with vibrant floral aesthetics, smooth animations, and intuitive navigation. Built with HTML5 and CSS3, it's fully responsive and optimized for performance across devices.
+Whether you're showcasing bouquets, wedding decorations, or seasonal blooms, Bloom & Petals helps you create an engaging online presence that captures the essence of freshness and joy.
+Demo: [Link to Live Preview] (e.g., your hosting URL)
+Download Package: Available via ThemeForest download.
+
+Features
+
+Fully Responsive: Adapts seamlessly to desktops, tablets, and mobiles.
+Modern Animations: Typing effect in hero banner, fade-up transitions, hover effects, and gentle sway animations for images.
+Clean Code: Well-commented HTML and CSS for easy editing.
+Cross-Browser Compatibility: Tested on major browsers.
+SEO-Friendly: Semantic HTML structure with proper meta tags.
+No Dependencies: Pure HTML/CSS (no JavaScript required, though form submission can be enhanced with JS).
+Key Sections: Hero banner, About, Services, Gallery, Blog, Contact, and Footer.
+Customization Ready: Easy to modify colors, fonts, images, and content.
+
+
+Files Included
+After downloading the package from ThemeForest, you'll find the following structure:
+textbloom-petals-template/
+├── index.html              # Main HTML file
+├── assets/
+│   ├──icons/                # Icons for logos, cards, footer, etc. (icon1.jpg, icon2.png, etc.)
+│   │── index.css            # Main stylesheet
+│   ├
+│   │      
+│   │       
+│   │             
+│   └── js/                 # (Optional: Add custom JS here if needed)
+├── documentation.html      # This documentation (view in browser)
+└── README.md               # Quick start guide
+Note: All images are placeholders. Replace with your own high-quality AVIF/WebP/JPG files for optimal performance.
+
+Installation
+
+Unzip the Package: Extract the downloaded ZIP file to a folder on your computer.
+Open in Editor: Use a code editor like VS Code, Sublime Text, or even Notepad++ to open index.html.
+Preview Locally: Double-click index.html to open it in your default browser. For a local server (recommended for forms/images), use tools like Live Server (VS Code extension) or Python's http.server.
+Upload to Hosting:
+FTP the entire folder to your web server root (e.g., public_html).
+Ensure file permissions are set correctly (644 for files, 755 for folders).
+
+Form Functionality: The contact form is static. To make it functional:
+Integrate with a backend like PHP (Formspree, Netlify Forms) or JavaScript (EmailJS).
+Example: Add <script src="https://formspree.io/f/your-form-id"></script> before </body>.
+
+
+Requirements:
+
+Web Server (Apache/Nginx) for production.
+No server-side languages required for basic display.
+
+
+Template Structure
+HTML Structure
+The template uses semantic HTML5 elements for better accessibility and SEO:
+HTML<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags, title, CSS link -->
+</head>
+<body>
+    <nav class="navbar"> <!-- Navigation --></nav>
+    <section class="banner" id="home"> <!-- Hero --></section>
+    <section class="about" id="about"> <!-- About --></section>
+    <section class="services" id="shop"> <!-- Services --></section>
+    <section class="gallery" id="gallery"> <!-- Portfolio --></section>
+    <section class="blog" id="blog"> <!-- Blog --></section>
+    <section class="contact" id="contact"> <!-- Contact --></section>
+    <footer class="footer"> <!-- Footer --></footer>
+</body>
+</html>
+CSS Structure
+All styles are in assets/css/index.css:
+
+Reset & Base:* { margin: 0; ... }
+Components: Navbar, buttons, cards, grids.
+Sections: Specific styles for banner, about, etc.
+Animations: Keyframes for typing, fadeUp, bloomEntry, etc.
+Responsive: Media queries for tablets (992px) and mobiles (576px).
+
+To add custom styles, append to the end of index.css.
+
+Customization
+Colors
+Primary color: #d63384 (pink/magenta). Edit in CSS:
+CSS:root {
+  --primary: #d63384;
+  --secondary: #b82b6f;
+  --bg-light: #fff5f8;
+}
+Replace hex values globally.
+Fonts
+Uses system font Arial, sans-serif. To change:
+
+Add Google Fonts in <head>: <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+Update: font-family: 'Playfair Display', serif;
+
+Images & Icons
+
+Replace hero background: Update url("banner.avif") in .banner.
+Gallery/Blog: Swap src attributes in <img> tags.
+Icons: Replace files in assets/icons/ (PNG/SVG recommended).
+
+Content
+
+Edit text directly in HTML (e.g., <h1> for hero title).
+Add/remove cards: Duplicate <div class="service-card"> and adjust grid.
+Navigation: Update <a href="#id"> links.
+
+Animations
+Disable if needed: Comment out @keyframes or animation properties.
+Pro Tip: Use tools like Adobe XD or Figma for mockups before editing.
+
+Sections Overview
+
+SectionIDDescriptionCustomization NotesNavbar-Fixed top nav with logo, links, CTA button.Add mobile menu with JS if needed.Banner (Hero)#homeFull-screen hero with typing animation and buttons.Change background image; adjust typing text.About#aboutText + feature cards + mosaic gallery.Add more cards; resize grid items.Services#shopGrid of service cards with icons.4 cards by default; auto-fits on mobile.Gallery#galleryMasonry-style portfolio with overlays.Add/remove items; supports tall/wide variants.Blog#blog3-card blog preview (one featured).Link to full blog posts externally.Contact#contactSimple form with subtitle.Integrate backend for submissions.Footer-4-column layout with social links.Add more links; update contact details.
+All sections use CSS Grid/Flexbox for layout.
+
+Assets and Credits
+Images
+
+Placeholder flowers: Unsplash/Pexels (free for commercial use).
+Banner: Custom floral stock (replace with licensed assets).
+License Note: Ensure all images comply with Envato's rules; provide source files if required.
+
+Icons
+
+Custom PNG/SVG icons in assets/icons/.
+Sources: Flaticon (attribution-free under premium license).
+
+Fonts
+
+Arial (system default) - No external credits.
+
+Other
+
+Animations: Pure CSS - No libraries.
+Full Credits: See credits.txt in download package for detailed attributions.
+
+
+Changelog
+
+v1.0.0 (Jan 04, 2026): Initial release.
+Added all sections and responsive design.
+Implemented animations and hover effects.
+
+
+Future updates: Bug fixes, new sections (e.g., testimonials), JS enhancements.
+
+Support
+For questions or issues:
+
+Envato Support: Submit via ThemeForest item page.
+Author Contact: [your-email@example.com] or comments on item page.
+Documentation Updates: Check for v1.0.1+.
+
+Before Contacting Support:
+
+Ensure you're using the latest version.
+Test in an incognito browser.
+Provide screenshots/error logs.
+
+Thank you for purchasing Bloom & Petals! We hope it blooms your business.
